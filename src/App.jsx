@@ -1,17 +1,15 @@
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 
 function App() {
-  
-return (
+  return (
     <>
-     <section className="bg-white min-h-screen w-full">
-     <main className="border-2 border-black max-w-[1100px] mx-16 mt-2">
-      <Navbar/>
-      fjdskjfdklfjdkljfdlkjfkldj
-      </main>
-     </section>
+      <section className="bg-white min-h-screen w-full">
+        <main className="max-w-[1100px] mx-20">
+          <Navbar />
+        </main>
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
