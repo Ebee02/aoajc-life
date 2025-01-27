@@ -45,9 +45,14 @@ function App() {
           </div>
         </main>
 
-        <div className="bg-[#F9F6F4] my-5 w-full grid place-items-center">
+        <div className="bg-[#F9F6F4] mt-5 w-full grid place-items-center">
           <div className="max-w-[990px] py-9">
-            <h3 className="text-2xl font-semibold tracking-wide mb-2">About</h3>
+            <div className="mb-5 font-semibold tracking-wide flex items-center justify-between">
+              <h3 className="text-2xl">About</h3>
+              <button className="duration-300 transition-all hover:bg-gray-700 font-normal py-3 px-6 bg-gray-800 text-white text-sm rounded-full cursor-pointer">
+                Message us
+              </button>
+            </div>
             <div className="grid grid-cols-2 gap-4">{aboutCardElement}</div>
           </div>
         </div>
