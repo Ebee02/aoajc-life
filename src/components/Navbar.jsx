@@ -3,7 +3,7 @@ import { FaYoutube, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <header className="flex items-center justify-between mb-10 ">
+    <header className="flex items-center justify-between mb-10 mt-10">
       <h3 className="text-xl font-semibold tracking-wide">logo placement</h3>
 
       <ul className="flex items-center gap-6">
