@@ -1,7 +1,20 @@
 import Navbar from "./components/Navbar";
 import placementImg from "./assets/images/placement-image.jpg";
+import AboutSectionCard from "./components/AboutSectionCard";
+import aboutCardData from "./components/aboutCardData";
+import AboutCardData from "./components/aboutCardData";
 
 function App() {
+  console.log("aboutCardData", aboutCardData);
+
+  const aboutCardElement = aboutCardData.map((data) => (
+    <AboutSectionCard
+      key={data.id}
+      title={data.title}
+      text={data.text}
+      img={data.img}
+    />
+  ));
   return (
     <>
       <section className="bg-white min-h-screen w-full grid place-items-center">
@@ -31,6 +44,13 @@ function App() {
             />
           </div>
         </main>
+
+        <div className="bg-[#F9F6F4] my-5 w-full grid place-items-center">
+          <div className="max-w-[990px] py-9">
+            <h3 className="text-2xl font-semibold tracking-wide mb-2">About</h3>
+            <div className="grid grid-cols-2 gap-4">{aboutCardElement}</div>
+          </div>
+        </div>
       </section>
     </>
   );
